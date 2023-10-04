@@ -30,6 +30,10 @@ namespace NewApp.Models
             //sua mot doi tuong trong danh sach
             int indexToEdit = 0; // chi muc cua phan tu duoc sua doi
             psList[indexToEdit].NhapThongTin(); // sua doi thong tin cua phan tu
+            //xoa mot phan tu trong danh sach
+            int indexToRemove = 1; // chi muc can xoa
+            psList.RemoveAt(indexToRemove); // xoa phan tu chi muc da chon
+
 
 
         }
