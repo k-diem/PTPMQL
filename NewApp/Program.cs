@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-namespace NewApp.Models // Tùy chọn: Định nghĩa một không gian tên (namespace)
+namespace NewApp.Models
 {
     class Program
     {
@@ -20,6 +20,16 @@ namespace NewApp.Models // Tùy chọn: Định nghĩa một không gian tên (n
             {
                 Console.WriteLine(p.PersonID + "-" + p.FullName);
             }
+            //them mot doi tuong ps vao danh sach
+            for (int i = 0; i < 2; i++)
+            {
+                Person ps = new Person();
+                ps.NhapThongTin();
+                psList.Add(ps);
+            }
+
         }
     }
+
+
 }
