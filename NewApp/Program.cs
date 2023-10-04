@@ -1,28 +1,25 @@
 ﻿using System;
-
-int n;
-do
+using System.Collections;
+namespace NewApp.Models // Tùy chọn: Định nghĩa một không gian tên (namespace)
 {
-    try
+    class Program
     {
-        Console.WriteLine("n = ");
-        n = Convert.ToInt16(Console.ReadLine());
+        static void Main(string[] args)
+        {
+            // Tạo danh sách các đối tượng Person
+            var psList = new List<Person>();
+
+            for (int i = 0; i < 2; i++)
+            {
+                Person ps = new Person();
+                ps.NhapThongTin();
+                psList.Add(ps);
+            }
+
+            foreach (Person p in psList)
+            {
+                Console.WriteLine(p.PersonID + "-" + p.FullName);
+            }
+        }
     }
-    catch
-    {
-        n = 0;
-    }
-} while (n < 1);
-
-int[] A = new int[n];
-
-for (int i = 0; i < A.Length; i++)
-{
-    Console.Write("A[{0}] = ", i);
-    A[i] = Convert.ToInt16(Console.ReadLine());
-}
-
-for (int i = 0; i < A.Length; i++)
-{
-    Console.Write("{0}\t", A[i]);
 }
