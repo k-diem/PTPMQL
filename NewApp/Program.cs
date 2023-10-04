@@ -27,6 +27,10 @@ namespace NewApp.Models
                 ps.NhapThongTin();
                 psList.Add(ps);
             }
+            //sua mot doi tuong trong danh sach
+            int indexToEdit = 0; // chi muc cua phan tu duoc sua doi
+            psList[indexToEdit].NhapThongTin(); // sua doi thong tin cua phan tu
+
 
         }
     }
