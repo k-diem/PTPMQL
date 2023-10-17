@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-
 namespace DemoMVC.Controllers
 {
     public class DemoController : Controller
