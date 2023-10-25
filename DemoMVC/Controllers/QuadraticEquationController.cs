@@ -3,7 +3,7 @@ using DemoMVC.Models;
 
 namespace DemoMVC.Controllers
 {
-    public class StudentController : Controller
+    public class QuadraticEquationController : Controller
     {
         public IActionResult Index()
         {
@@ -11,20 +11,28 @@ namespace DemoMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(Student std)
+        public IActionResult Index(double a, double b, double c)
         {
-            string str = "Hello " + std.StudentID + "-" + std.FullName;
-            ViewBag.thongBao = str;
+            // Thực hiện giải phương trình bậc 2 ở đây
+            double discriminant = b * b - 4 * a * c;
+            double root1, root2;
 
-            QuadraticEquationModel equation = new QuadraticEquationModel
+            if (discriminant > 0)
             {
-                A = 1, 
-                B = 2, 
-                C = 1  
-            };
-            equation.Solve();
-            ViewBag.Root1 = equation.Root1;
-            ViewBag.Root2 = equation.Root2;
+                root1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
+                root2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
+            }
+            else if (discriminant == 0)
+            {
+                root1 = root2 = -b / (2 * a);
+            }
+            else
+            {
+                root1 = root2 = double.NaN; // Không có nghiệm thực
+            }
+
+            ViewBag.Root1 = root1;
+            ViewBag.Root2 = root2;
 
             return View();
         }
