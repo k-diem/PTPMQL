@@ -1,0 +1,26 @@
+@model DemoMVC.Models.QuadraticEquationModel
+
+<form asp-action="Index" method="post">
+    <label for="A">Coefficient A:</label>
+    <input type="text" asp-for="A" placeholder="Enter A" /><br />
+
+    <label for="B">Coefficient B:</label>
+    <input type="text" asp-for="B" placeholder="Enter B" /><br />
+
+    <label for="C">Coefficient C:</label>
+    <input type="text" asp-for="C" placeholder="Enter C" /><br /><br>
+
+    <button type="submit">Solve</button>
+    <h1>@ViewBag.thongBao</h1>
+    <h2>Duong Khanh Diem - 2021050130</h2>
+
+    @if (Model.Discriminant >= 0)
+    {
+        <p>Root 1: @Model.Root1</p>
+        <p>Root 2: @Model.Root2</p>
+    }
+    else
+    {
+        <p>No real roots.</p>
+    }
+</form>
