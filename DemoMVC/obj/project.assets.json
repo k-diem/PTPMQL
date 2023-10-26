@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
+      "projectUniqueName": "D:\\PTPMQL\\demomvc\\DemoMVC.csproj",
       "projectName": "DemoMVC",
-      "projectPath": "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
+      "projectPath": "D:\\PTPMQL\\demomvc\\DemoMVC.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\PTPMQL\\DemoMVC\\obj\\",
+      "outputPath": "D:\\PTPMQL\\demomvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
