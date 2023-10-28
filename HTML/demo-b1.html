@@ -7,18 +7,17 @@
    </head>
 <body>
   <h1>DUONG KHANH DIEM - 2021050130</h1>
-  <form action="/action_page.php">
-    <input list="browsers">
-    <datalist id="browsers">
-      <option value="Edge">
-      <option value="Firefox">
-      <option value="Chrome">
-      <option value="Opera">
-      <option value="Safari">
-    </datalist>
-  </form>
-  <!--Phần <datalist>tử chỉ định danh sách các tùy chọn được xác định trước cho một <input>phần tử.
-Người dùng sẽ thấy danh sách thả xuống gồm các tùy chọn được xác định trước khi họ nhập dữ liệu.
-Thuộc listtính của <input>phần tử, phải tham chiếu đến idthuộc tính của <datalist>phần tử.-->
+  <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+  <!--Phần <output>tử biểu thị kết quả của một phép tính (giống như kết quả được thực hiện bởi một tập lệnh).-->
 </body>
 </html>
