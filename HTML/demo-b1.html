@@ -7,15 +7,17 @@
    </head>
 <body>
   <h1>DUONG KHANH DIEM - 2021050130</h1>
-  <form>
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-    <label for="vehicle2"> I have a car</label><br>
-    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-    <label for="vehicle3"> I have a boat</label>
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
   </form>
-  <!--Việc <input type="checkbox">xác định một hộp kiểm .
-Các hộp kiểm cho phép người dùng chọn các tùy chọn KHÔNG hoặc NHIỀU tùy chọn trong một số lựa chọn giới hạn.-->
+  <!--Xác <input type="submit">định nút để gửi dữ liệu biểu mẫu tới trình xử lý biểu mẫu.
+
+Trình xử lý biểu mẫu thường là một tệp trên máy chủ có tập lệnh để xử lý dữ liệu đầu vào.
+
+Trình xử lý biểu mẫu được chỉ định trong action thuộc tính của biểu mẫu.-->
 </body>
 </html>
