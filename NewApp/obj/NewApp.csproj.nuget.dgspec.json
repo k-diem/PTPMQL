@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PTPMQL\\newapp\\NewApp.csproj": {}
+    "D:\\PTPMQL\\NewApp\\NewApp.csproj": {}
   },
   "projects": {
-    "D:\\PTPMQL\\newapp\\NewApp.csproj": {
+    "D:\\PTPMQL\\NewApp\\NewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPMQL\\newapp\\NewApp.csproj",
+        "projectUniqueName": "D:\\PTPMQL\\NewApp\\NewApp.csproj",
         "projectName": "NewApp",
-        "projectPath": "D:\\PTPMQL\\newapp\\NewApp.csproj",
+        "projectPath": "D:\\PTPMQL\\NewApp\\NewApp.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\PTPMQL\\newapp\\obj\\",
+        "outputPath": "D:\\PTPMQL\\NewApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
