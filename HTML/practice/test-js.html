@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kiemtra(){
+            var value = document.getElementById("txtName").value;
+            if(value.length <= 2 || value.length >= 8){
+                alert("Nhap khong dung < name < 8 ");
+                document.getElementById("txtName").focus();
+            }
+        }    
+            function kiemtra2(){
+                var reg1 = /^[a-zA-z]+[a-zA-Z0-9]*\.[a-zA-Z]+$/
+                var value = document.getElementById("txtName").value;
+                if(reg1.test(value)){
+                }else{
+                    alert("Nhap ten sai");
+                    var value = document.getElementById("txtName").focus();
+                }
+            }
+    </script>
+</head>
+<body>
+    <input type="text" id = "txtName"><br><br>
+    <input type="button" value="Check Name" onclick="kiemtra();"><br><br>
+    <input type="button" value = "Check Name 2" onclick="kiemtra2();"><br><br>
+</body>
+</html>

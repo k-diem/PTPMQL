@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <style>
+        .a{
+            width: 127px;
+            color: red;
+            font-weight: bold;
+            background: linear-gradient(#E3E6E8, #FDD5C0);
+            border-color: antiquewhite;
+        }
+        .a:hover{
+            background: rgb(142, 240, 245);
+        }
+        .bt-form button{
+            width: 127px;
+            color: red;
+            font-weight: bold;
+            background: linear-gradient(#E3E6E8, #FDD5C0);
+            border-color: antiquewhite;
+        }
+        .bt-form button:hover{
+            background: rgb(142, 240, 245);
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="https://www.youtube.com/">
+        <div>
+            <hr>
+                <h1 style="text-align: center;">Hotel Reservation Form</h1>
+            <hr>
+            <table style="margin-left: 30px;">
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" name = "txtName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select City:</td>
+                    <td>
+                        <select name="city" required>
+                            <option value="">Select...</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Huế</option>
+                            <option value="">Hồ Chí Minh</option>
+                            <option value="">Đà Nẵng</option>
+                            <option value="">Đà Lạt</option>
+                            <option value="">Cần Thơ</option>
+                            <option value="">Vũng Tàu</option>
+                            <option value="">Quản Ninh</option>
+                            <option value="">Hải Phòng</option>
+                            <option value="">Hải Dương</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Arrival Date (MM/dd/yyyy):</td>
+                    <td><input type="date" name = "txtArrivalDate" required></td>
+                </tr>
+                <tr>
+                    <td>Departure Date (MM/dd/yyyy):</td>
+                    <td><input type="date" name = "txtDeparture Date" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num_people">Number of Room(s):</label>
+                    </td>
+                    <td>
+                        <input type="number" id="num_people" name="num_people" min="1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num_rooms">Number of Person(s):</label>
+                    </td>
+                    <td>
+                        <input type="number" id="num_rooms" name="num_rooms" min="1" required>
+                    </td>
+                </tr>
+            </table>
+            <div class="bt-form">
+                <input class="a" type="submit" value="Submit">&nbsp;&nbsp;
+                <input class="a" type="reset" value="Clear Form">&nbsp;&nbsp;
+                <button onclick="history.back()">Back</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+          const numPeople = parseInt(document.querySelector('#num_people').value);
+          const numRooms = parseInt(document.querySelector('#num_rooms').value);
+          if (isNaN(numPeople) || isNaN(numRooms)) {
+            alert('Must be integer');
+            event.preventDefault();
+          } else if (numPeople < numRooms) {
+            alert('Must be equal or more than number of rooms.');
+            event.preventDefault();
+          } else {
+            alert('Reservation success! Thank you!');
+          }
+        });
+    </script>
+</body>
+</html>

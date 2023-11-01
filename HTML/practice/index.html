@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<script>
+    function home(){
+        var frame = document.getElementById("subpage");
+        frame.src = "./subpage/home.html";
+    }
+    function reservation(){
+        var frame = document.getElementById("subpage");
+        frame.src = "./subpage/reservation.html";
+    }
+    function contact(){
+        var frame = document.getElementById("subpage");
+        frame.src = "./subpage/contact.html";
+    }
+</script>
+<body>
+    <div class="container">
+        <div class="menu">
+            <hr>
+            <h1>Main Menu</h1>
+            <hr>
+            <div class="sub-menu">
+                <button onclick="home()">Home</button>
+                <button onclick="reservation()">Reservation</button>
+                <button onclick="contact()">Contact Us</button>
+            </div>
+        </div>
+        <div class="space"></div>
+       <div class="i-fr">
+            <iframe src="./subpage/home.html" id="subpage" frameborder="0" width="100%" height="100%" ></iframe>
+       </div> 
+    </div>
+   
+</body>
+</html>

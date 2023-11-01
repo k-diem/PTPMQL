@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         table{
+        border: 1px solid black;
+        margin: auto;
+        background-color:rgb(215, 134, 107);
+        color: white;
+        }
+        h1{
+        text-align: center;
+        text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://dantri.com.vn/">
+        <h1>
+            STUDENT REGISTRATION FORM
+        </h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="firstname">FIRST NAME</label>
+                </td>
+                <td>
+                    <input type="text" id="firstname" name="firstname" required pattern="[a-zA-Z]{1,30}">(max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="last name">LAST NAME</label>
+                </td>
+                <td>
+                    <input type="text" id="lastname" name="lastname" required pattern="[a-zA-Z]{1,30}">(max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="datebirth">DATE OF BIRTH</label>
+                </td>
+                <td>
+                    <input type="date" id="date" name="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">EMAIL ID</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">MOBILE NUMBER</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10} required">(10 digit number)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">GENDER</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender">Male &nbsp;&nbsp;
+                    <input type="radio" id="femail" name="gender">Femail
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">ADRDRESS</label>
+                </td>
+                <td>
+                    <input style="height: 70px;" type="text" id="address" name="address">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                        <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+Đang hiển thị 7380195029895542214.

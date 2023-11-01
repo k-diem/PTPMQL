@@ -1,0 +1,47 @@
+.menu{
+    width: 20%;
+    height: 550px;
+    border: 2px solid red;
+    text-align: center; background-color: rgb(235, 250, 250);
+}
+
+.sub-menu{
+    display: flex; 
+    flex-direction: column;
+    padding:10px 30px;
+    
+}
+
+.sub-menu button {
+    padding:10px 30px;
+    color: red;
+    font-weight: bold;
+    background: linear-gradient(#E3E6E8, #FDD5C0);
+    border-color: antiquewhite;
+}
+
+.container{
+    display: flex;
+}
+
+.space{
+    width: 30px;
+    min-width: 50px;
+}
+
+.i-fr{
+    width: 80%; 
+    height: 550px; 
+    border: 2px solid red;
+    background-color: rgb(235, 250, 250);;
+}
+
+.sub-menu button:hover{
+    background: rgb(142, 240, 245);
+}
+
+
+
+
+
+

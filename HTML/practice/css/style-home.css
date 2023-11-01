@@ -1,0 +1,87 @@
+.container{
+    margin: 0 auto;
+    background-image: url("../images/img-home/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    height: 120px;
+    text-align: center;
+}
+h1{
+    font-family: arial;
+    font-size: 300%;
+    color: white;
+}
+h2{
+    font-family: arial;
+    font-size: 170%;
+    color: white;
+}
+.body{
+    margin: auto;
+    width: 960px;
+}
+.menu{
+    background-image: url("../images/img-home/bar.jpg");
+    height: 70px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    
+}
+.menu li{
+    text-align: center;
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p+p{
+    margin-top: 10px;
+}
+.content{
+    width: 960px;
+}
+
+.left{
+    float: left;
+    width: 80%;
+ 
+}
+
+.right{
+    float: right;
+    width: 20%;
+    background-color: grey;
+}
+
+.c-both{
+    clear: both;
+}
+
+.footer{
+    color: white; 
+    background-image: url(../images/img-home/bar.jpg);
+    height: 70px;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    color: mediumblue;
+}
