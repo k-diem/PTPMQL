@@ -1,0 +1,22 @@
+<div class="w3-container w3-boder">
+    <h2>Input Employee</h2>
+    <form asp-action="Index" class="w3-container" method="post">
+        <p>
+            <label>EmployeeID:</label>
+            <input class="w3-input" type="text" name="EmployeeID">
+        </p>
+        <p>
+            <label>EmployeeName: </label>
+            <input class="w3-input" type="text" name="EmployeeName">
+        </p>
+        <p>
+            <label>Department: </label>
+            <input class="w3-input" type="text" name="Department">
+        </p>
+        <p>
+            <button type="submit" class="w3-btn w3-blue">Send</button>
+        </p>
+        <h1>@ViewBag.thongBao</h1>
+        <h2>Duong Khanh Diem - 2021050130</h2>
+    </form>
+</div>
