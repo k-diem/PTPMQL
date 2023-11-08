@@ -1,0 +1,57 @@
+/* site.css */
+
+/* Thiết lập một lớp container cho nội dung */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tùy chỉnh tiêu đề h1 */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Tùy chỉnh phần nút "Create New" */
+p a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Tùy chỉnh bảng */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+/* Tùy chỉnh đầu bảng (table head) */
+.table th {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Tùy chỉnh hàng trong bảng (table row) */
+.table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Tùy chỉnh liên kết */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}

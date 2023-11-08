@@ -1,16 +1,40 @@
-<div class="w3-container w3-boder" >
-  <h2>Input Person</h2>
-<form asp-action="Index" class="w3-container" method="post">
-  <p>
-  <label>PersonID:</label>
-  <input class="w3-input" type="text" name="PersonID"></p>
-  <p>
-  <label>PersonName: </label>
-  <input class="w3-input" type="text" name="PersonName"></p>
-  <p>
-  <button type="submit" class="w3-btn w3-blue">Send</button>
-   <h1>@ViewBag.thongBao</h1>
-    <h2>Duong Khanh Diem - 2021050130</h2>
-</form>
+@* DUONG KHANH DIEM - 2021050130 *@
+@model IEnumerable<DemoMVC.Models.Person>
 
-</div>
+@{
+  ViewData["Title"] = "Index";
+}
+<h1 class="w3-container w3-teal">Index</h1>
+
+<p>
+  <a asp-action="Create" class="w3-button w3-black">Create New</a>
+</p>
+<table class="w3-table">
+  <thead>
+    <tr>
+      <th>
+        @Html.DisplayNameFor(model => model.FullName)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Address)
+      </th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model) {
+      <tr>
+        <td>
+          @Html.DisplayFor(modelItem => item.FullName)
+        </td>
+        <td>
+          @Html.DisplayFor(modleItem => item.Address)
+        </td>
+        <td>
+          <a asp-action="Edit" asp-route-id="@item.PersonId">Edit</a> |
+          <a asp-action="Delete" asp-route-id="@item.PersonId">Delete</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
