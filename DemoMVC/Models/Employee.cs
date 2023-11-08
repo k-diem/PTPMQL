@@ -1,11 +1,12 @@
-using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DemoMVC.Models
 {
-    public class Employee
+    [Table("Employees")]
+    public class Employee : Person
     {
-        public string EmployeeID { get; set; }
-        public string EmployeeName { get; set; }
-        public string Department { get; set; }
+        public string EmployeeId { get; set; }
+        public int Age { get; set; }
     }
 }
