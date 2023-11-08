@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+// DUONG KHANH DIEM - 2021050130
 namespace DemoMVC.Models
 {
     [Table("Employees")]

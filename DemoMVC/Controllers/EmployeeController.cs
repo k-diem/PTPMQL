@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DemoMVC.Data;
 using DemoMVC.Models;
-
+// DUONG KHANH DIEM - 2021050130
 namespace DemoMVC.Controllers
 {
     public class EmployeeController : Controller
