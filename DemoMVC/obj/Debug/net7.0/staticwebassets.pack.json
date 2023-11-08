@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\PTPMQL\\DemoMVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "D:\\PTPMQL\\DemoMVC\\wwwroot\\css\\w3school.css",
       "PackagePath": "staticwebassets\\css\\w3school.css"
     },

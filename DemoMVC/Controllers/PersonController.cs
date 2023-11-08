@@ -49,7 +49,7 @@ namespace DemoMVC.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("PersonId, FullName, Address")] Person person)
+        public async Task<IActionResult> Edit(string id, [Bind("PersonId, FullName, Address, Age")] Person person)
         {
             if (id != person.PersonId)
             {

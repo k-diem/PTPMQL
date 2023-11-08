@@ -7,9 +7,9 @@
 <h1 class="w3-container w3-teal">Index</h1>
 
 <p>
-  <a asp-action="Create" class="w3-button w3-black">Create New</a>
+  <a asp-action="Create" class="w3-button w3-black w3-container w3-margin">Create New</a>
 </p>
-<table class="w3-table">
+<table class="w3-table w3-border">
   <thead>
     <tr>
       <th>
@@ -17,6 +17,9 @@
       </th>
       <th>
         @Html.DisplayNameFor(model => model.Address)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Age)
       </th>
       <th></th>
     </tr>
@@ -31,8 +34,12 @@
           @Html.DisplayFor(modleItem => item.Address)
         </td>
         <td>
-          <a asp-action="Edit" asp-route-id="@item.PersonId">Edit</a> |
-          <a asp-action="Delete" asp-route-id="@item.PersonId">Delete</a>
+          @Html.DisplayFor(modelItem => item.Age)
+        </td>
+
+        <td>
+          <a asp-action="Edit" asp-route-id="@item.PersonId" class="w3-button w3-black w3-container w3-margin">Edit</a> |
+          <a asp-action="Delete" asp-route-id="@item.PersonId" class="w3-button w3-black w3-container w3-margin">Delete</a>
         </td>
       </tr>
     }
