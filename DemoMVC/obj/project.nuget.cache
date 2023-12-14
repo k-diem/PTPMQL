@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aj+lTpWAC+ahIA53NdcINDxuXX1IOKoZS3gRBb5h2MyA4jEOC4xOOkLHHHQWVkCYG+C4NIwGK7AwmMxbswYJzg==",
+  "dgSpecHash": "b+rDWfADPTbtaT5qFD0LoMsFA2iec2GVZzZ6lk5HZkKKQJoWpDubP9sj4PzNnCJejVY4yx4xbB4NTZIkCVxYOw==",
   "success": true,
-  "projectFilePath": "D:\\PTPMQL\\demomvc\\DemoMVC.csproj",
+  "projectFilePath": "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

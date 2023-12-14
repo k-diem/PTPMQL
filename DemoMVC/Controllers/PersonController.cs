@@ -1,17 +1,15 @@
-using System.Security.Cryptography.X509Certificates;
-using System.Dynamic;
-using System.Reflection.PortableExecutable;
-using System.Net;
 using System;
-using System.IO;
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DemoMVC.Data;
 using DemoMVC.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using DemoMVC.Models.Process;
-
+using OfficeOpenXml;
+using X.PagedList;
 
 namespace DemoMVC.Controllers
 {
@@ -24,9 +22,20 @@ namespace DemoMVC.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page, int? PageSize)
         {
-            var model = await _context.Person.ToListAsync();
+            ViewBag.PageSize = new List<SelectListItem>()
+            {
+                new SelectListItem() {Value="3", Text="3"},
+                new SelectListItem() {Value="5", Text="5"},
+                new SelectListItem() {Value="10", Text="10"},
+                new SelectListItem() {Value="15", Text="15"},
+                new SelectListItem() {Value="25", Text="25"},
+                new SelectListItem() {Value="50", Text="50"},  
+            };
+            int pagesize = (PageSize ?? 3);
+            ViewBag.psize = pagesize;
+            var model = _context.Person.ToList().ToPagedList(page ?? 1, pagesize);
             return View(model);
         }
         public IActionResult Create()
