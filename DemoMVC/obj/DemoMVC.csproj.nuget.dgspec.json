@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj": {}
+    "D:\\PTPMQL\\demomvc\\DemoMVC.csproj": {}
   },
   "projects": {
-    "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj": {
+    "D:\\PTPMQL\\demomvc\\DemoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
+        "projectUniqueName": "D:\\PTPMQL\\demomvc\\DemoMVC.csproj",
         "projectName": "DemoMVC",
-        "projectPath": "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
+        "projectPath": "D:\\PTPMQL\\demomvc\\DemoMVC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\PTPMQL\\DemoMVC\\obj\\",
+        "outputPath": "D:\\PTPMQL\\demomvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -61,6 +65,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.4.7, )"
             }
           },
           "imports": [
@@ -82,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
